@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script src="built/fingerprintjs2-min.js"></script>
+        <script src="built/ip_scraper-min.js"></script>
+        <script src="built/logger-min.js"></script>
+    </head>
+
+    <body id="logInfo">
+        <script>
+            setTimeout(function(){
+                var body = document.getElementById("logInfo");
+                body.innerHTML = JSON.stringify(userData);
+                }, 3000);
+            //sendInfo("/loggingEndpoint");
+        </script>
+    </body>
+</html>
