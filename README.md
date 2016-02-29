@@ -1,12 +1,18 @@
 # logger
 Simple javascript logging of fingerprint, IP address and user agent. This uses webRTC to grab internal, external, and IPv6 IP addresses, and it uses advanced finerprinting techniques including canvas fingerprinting to uniquely classify a user.
 
+## Installation
+
+```bash
+    bower install logger.io
+```
+
 ## Example usage
 
 ```javascript
-  <script src="built/fingerprintjs2-min.js"></script>
-  <script src="built/ip_scraper-min.js"></script>
-  <script src="built/logger-min.js"></script>
+  <script src="bower_components/fingerprintjs2/fingerprintjs2.js"></script>
+  <script src="ip_scraper.js"></script>
+  <script src="logger.js"></script>
   <script> sendInfo("/loggingEndpoint"); </script>
 ```
 
