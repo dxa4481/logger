@@ -1,0 +1,21 @@
+{
+  "name": "logger",
+  "main": "logger.js",
+  "description": "logs user information",
+  "moduleType": [],
+  "authors": [
+    "Dylan Ayrey"
+  ],
+  "license": "GPLv2",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fingerprintjs2": "^1.1.1"
+  }
+}
