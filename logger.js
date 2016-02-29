@@ -24,14 +24,15 @@ new Fingerprint2().get(function(fingerprint, components){
   // components is an array of all fingerprinting components used
 });
 
-
-setTimeout(function(){
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "/loggingEndpoint", true);
-    xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
-    // send the collected data as JSON
-    xhr.send(JSON.stringify(userData));
-    xhr.onloadend = function () {
-    // done
-    } 
-}, 3000)
+var sendInfo = function(endpoint){
+    setTimeout(function(){
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", endpoint, true);
+        xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+        // send the collected data as JSON
+        xhr.send(JSON.stringify(userData));
+        xhr.onloadend = function () {
+        // done
+        } 
+    }, 3000)
+}
